@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colonel Burger - Menu</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .rtl { direction: rtl; text-align: right; }
+    .ltr { direction: ltr; text-align: left; }
+    .menu-list { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+    .btn { cursor: pointer; padding: 10px 15px; background: #eee; border-radius: 5px; }
+    .menu-section { margin-bottom: 40px; display: none; }
+    .menu-section.active { display: block; }
+    .section-title { font-weight: bold; margin: 20px 0 10px; font-size: 1.2em; }
+    .item { display: flex; justify-content: space-between; margin-bottom: 10px; }
+    .desc { font-size: 0.9em; color: #555; }
+    .price { font-weight: bold; margin-left: 5px; }
+  </style>
+</head>
+<body>
+
+  <!-- Main Menu Buttons -->
+  <div id="mainMenu" class="menu-list">
+    <div class="btn" data-target="breakfast"><div class="ltr">BREAKFAST</div><div class="rtl">صبحانه</div></div>
+    <div class="btn" data-target="starters"><div class="ltr">STARTERS</div><div class="rtl">پیش‌غذا</div></div>
+    <div class="btn" data-target="coldmenu"><div class="ltr">COLD MENU</div><div class="rtl">منوی سرد</div></div>
+    <div class="btn" data-target="burgers"><div class="ltr">BURGERS</div><div class="rtl">برگرها</div></div>
+    <div class="btn" data-target="drinks"><div class="ltr">DRINKS</div><div class="rtl">نوشیدنی‌ها</div></div>
+  </div>
+
+  <!-- Breakfast Section -->
+  <section id="breakfast" class="menu-section active">
+    <div class="section-title">صبحانه / Breakfast</div>
+
+    <!-- Omelets -->
+    <div class="item">
+      <div class="ltr">
+        <div class="en-name">1. Classic Omelet</div>
+        <div class="desc">(Eggs + Tomato + Butter + Colonel's Special Spice + Toast)</div>
+      </div>
+      <div class="rtl">
+        <div class="fa-name">۱ . املت کلاسیک</div>
+        <div class="price">139 T</div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="ltr">
+        <div class="en-name">2. Vegetable Omelet</div>
+        <div class="desc">(Eggs + Bell Pepper + Mushroom + Tomato + Onion + Aromatic Herbs + Toast)</div>
+      </div>
+      <div class="rtl">
+        <div class="fa-name">۲ . املت سبزیجات</div>
+        <div class="price">149 T</div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="ltr">
+        <div class="en-name">3. Colonel's Special Omelet</div>
+        <div class="desc">(Eggs + Colorful Bell Peppers + Mushroom + Tomato + Onion + Ham or Bacon + Cheddar Cheese + Toast)</div>
+      </div>
+      <div class="rtl">
+        <div class="fa-name">۳ . املت ویژه کلنل</div>
+        <div class="price">199 T</div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
